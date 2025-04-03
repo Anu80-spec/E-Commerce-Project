@@ -78,3 +78,37 @@ width: 200px;
 h1{
     font-size: 59px;
 }
+/* Base styles for all devices */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for devices with a width up to 768px */
+@media (max-width: 768px) {
+  .bike-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bike-item {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Styles for devices wider than 768px */
+@media (min-width: 769px) {
+  .bike-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .bike-item {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
