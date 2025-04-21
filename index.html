@@ -5,23 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USED BIKES SELLING WEBSITE </title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <header>
-        <h1>Vintage Bike Selling</h1>
-        <a href="contact.htm"><button>
-            <h2>contact us</h2>
-        </button>
-    </a>
-    <input type="text" id="search-bar" placeholder="Search for bikes...">
-        <div class="cart">
-            <span id="cart-count">0</span> Items in Cart
+
+<header>
+<h1>Vintage Bike Selling</h1>
+
+<a href="contact.htm">
+    <button><h2>Contact Us</h2></button>
+</a>
+
+<input type="text" id="search-bar" placeholder="Search for bikes...">
+
+<div class="cart" id="view-cart-toggle">
+    <span id="cart-count">0</span> Items in Cart
+</div>
+</header>
+<section id="cart-section" class="hidden">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p><strong>Total: $<span id="total-price">0</span></strong></p>
+</section>
+
+<!-- Hero Section -->
+ <section1 class="container">
+<section class="hero">
+    <div class="hero-content">
+        <h2>Ride Into the Past With Style</h2>
+        <p>Explore our exclusive collection of pre-loved vintage bikes. Quality guaranteed. Style unmatched.</p>
+        
+    </div>
+</section>
+
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us">
+    <h2>Why Choose Us?</h2>
+    <div class="features">
+        <div class="feature">
+            <h3>✔ Quality Assurance</h3>
+            <p>Every bike is inspected and certified by our expert mechanics.</p>
         </div>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <div class="feature">
+            <h3>✔ Best Prices</h3>
+            <p>Transparent pricing with no hidden charges. Great deals every week!</p>
+        </div>
+        <div class="feature">
+            <h3>✔ Customer Support</h3>
+            <p>Friendly and responsive support to guide you from start to finish.</p>
+        </div>
+    </div>
+</section>
+</section1>
 
 
-    </header>
-    
     <section class="products">
         <div class="product" data-id="1" data-name="Yamaha R15" data-price="1500">
             <img src="Images/yamaha.png" alt="Yamaha R15">
@@ -84,7 +122,28 @@
             <button class="add-to-cart">Add to Cart</button>
         </div>
     </section>
+
+
+    <!-- Feedback Section -->
+<section id="feedback-section">
+    <h2>We'd love your feedback!</h2>
+    <p>Please let us know how we can improve our service.</p>
     
-    <script src="script.js"></script>
+    <form id="feedback-form">
+        <input type="text" id="feedback-name" placeholder="Your Name" required>
+        <textarea id="feedback-message" placeholder="Your feedback..." rows="4" required></textarea>
+        
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+    <div id="feedback-list">
+        <h3>Recent Feedback:</h3>
+        <ul id="feedback-items"></ul>
+    </div>
+</section>
+<script src="script.js"></script>
+
 </body>
 </html>
+
+
